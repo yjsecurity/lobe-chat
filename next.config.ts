@@ -22,6 +22,7 @@ const standaloneConfig: NextConfig = {
 const assetPrefix = process.env.NEXT_PUBLIC_ASSET_PREFIX;
 
 const nextConfig: NextConfig = {
+  productionBrowserSourceMaps: false,
   ...(isStandaloneMode ? standaloneConfig : {}),
   assetPrefix,
   compiler: {
